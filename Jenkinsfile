@@ -1,4 +1,6 @@
 DOCKER JAVA PROJECT
+
+
 pipeline {
  agent any
  tools {
@@ -62,3 +64,27 @@ version: 'v2'
  }
  }
 }
+
+
+###### I have deployed to eks cluster also by creating with terraform and successfully accessed the Application #######
+
+stage ("Configure EKS") {
+   steps {
+    sh '''
+    aws eks --region us-east-1 update-kubeconfig --name eks-cluster-cloud
+    '''
+   }
+  }
+
+  NEW: Deploy to EKS
+  stage ("Deploy to EKS") {
+   steps {
+    sh '''
+    kubectl apply -f k8s/deployment.yaml
+    kubectl apply -f k8s/service.yaml
+    '''
+   }
+  }
+
+
+  
