@@ -1,4 +1,4 @@
-<img width="1891" height="878" alt="3tier" src="https://github.com/user-attachments/assets/0da49814-2a0b-4eb5-aaaf-163b7fa77e30" />
+
 # Static FacebookApp
 
 
@@ -59,4 +59,6 @@ cd FacebookApp
 ######## I used an Existing Static FB app and Implemented a complete CI/CD Pipeline ########
 
 <img width="1882" height="913" alt="Screenshot 2026-29-03 104349" src="https://github.com/user-attachments/assets/6ab2da86-c985-4b74-8629-7e240567c884" />
+
+<img width="1891" height="878" alt="3tier" src="https://github.com/user-attachments/assets/0da49814-2a0b-4eb5-aaaf-163b7fa77e30" />
 
