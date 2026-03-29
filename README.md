@@ -32,9 +32,13 @@ Monitor the application: Use Prometheus, Blackbox Exporter, and Grafana for real
 CI/CD Pipeline Overview
 -------------------------
 
-GitHub Integration: Jenkins pulls the latest changes from the GitHub repository and triggers the pipeline.
+GitHub Integration:
+-----------------------
+
+Jenkins pulls the latest changes from the GitHub repository and triggers the pipeline.
 
 Build & Test:
+---------------
 The code is compiled and built using Maven.
 
 Code analysis is done using SonarQube.
@@ -42,16 +46,30 @@ Code analysis is done using SonarQube.
 Trivy scans for vulnerabilities.
 
 Docker & Nexus:
+----------------
+
 Jenkins builds a Docker image for the application.
+
 Artifacts are pushed to Nexus.
+
 Kubernetes Deployment:
+--------------------------
+
 The app is deployed to an EKS cluster.
+
 Kubernetes handles scaling and service management.
+
+
 Monitoring:
+
 Prometheus scrapes metrics from the Blackbox Exporter.
+
 Grafana visualizes application uptime, health, and other critical metrics.
+
 Steps to Reproduce the Project
-1. Clone the Repository
+----------------------------------
+Clone the Repository
+
 git clone https://github.com/LokeshPonthala/FacebookApp.git
 
 cd FacebookApp
