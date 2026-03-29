@@ -2,6 +2,8 @@
 
 
 Project Overview
+
+
 This project demonstrates a complete CI/CD pipeline setup for deploying a Static Facebook Application, integrating modern tools like Jenkins, SonarQube, Nexus, Docker, Kubernetes (EKS), and Prometheus for monitoring. This repository showcases the automation of code quality checks, artifact management, application deployment, and monitoring in a production-like environment.
 
 Key Technologies & Tools
