@@ -76,7 +76,6 @@ stage ("Configure EKS") {
    }
   }
 
-  NEW: Deploy to EKS
   stage ("Deploy to EKS") {
    steps {
     sh '''
@@ -85,6 +84,7 @@ stage ("Configure EKS") {
     '''
    }
   }
+}
 
 
   
